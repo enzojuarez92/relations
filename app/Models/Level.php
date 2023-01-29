@@ -14,7 +14,7 @@ class Level extends Model
         return $this->hasMany(User::class);
     }
 
-    public function post()
+    public function posts()
     {
         return $this->hasManyThrough(Post::class, User::class);
     }

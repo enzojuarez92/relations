@@ -18,8 +18,8 @@ class VideoFactory extends Factory
     {
         return [
             'name' => fake()->sentence(),
-            'category_id' => fake()->randomDigit(1, 4),
-            'user_id' => fake()->randomDigit(1, 5)
+            'category_id' => fake()->numberBetween(1, 4),
+            'user_id' => fake()->numberBetween(1, 5)
         ];
     }
 }

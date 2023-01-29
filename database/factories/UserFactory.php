@@ -18,7 +18,7 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'level_id' => fake()->randomElement([null, 1, 2, 3]),
+            'level_id' => fake()->randomElement([ 1, 2, 3]),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),

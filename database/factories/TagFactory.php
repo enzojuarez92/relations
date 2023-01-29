@@ -18,7 +18,6 @@ class TagFactory extends Factory
     {
         return [
             'name' => fake()->word()
-            
         ];
     }
 }

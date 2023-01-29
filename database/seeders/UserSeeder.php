@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             $user->groups()->attach($this->array(rand(1, 3)));
 
             $user->image()->save(User::factory(Image::class)->make([
-                'url' => 'https://lorempixel.com/90/90/'
+                'url' => 'https://picsum.photos/90'
             ]));
         });
     }
